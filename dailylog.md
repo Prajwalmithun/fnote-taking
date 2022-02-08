@@ -28,7 +28,7 @@
 
 - Created Nav Bar
 
-- Created Signup page
+- Created Signup page (Added security features, for username,password)
 
 - Created Login Page
 

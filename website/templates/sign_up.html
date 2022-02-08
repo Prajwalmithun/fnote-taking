@@ -23,8 +23,11 @@
         </label>
         <!-- "name=" is what we get the value from user and pass to backend-->
         <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+        <ul>
+            <li class="text-muted">First Name must be atleast 4 characters long.</li>
+            <li class="text-muted">First Name CANNOT start with a number or special characters.</li>
+        </ul>
     </div>
-    <br>
     <!-- for password -->
     <div class="form-group">
         <label for="password1">
@@ -32,8 +35,13 @@
         </label>
         <!-- "name=" is what we get the value from user and pass to backend-->
         <input type="password" class="form-control" id="password1" name="password1" placeholder="Password">
+        <ul>
+            <li class="text-muted">Password must be atleast 8 characters long.</li>
+            <li class="text-muted">Password must contain atleast 1 UpperCase alphabet.</li>
+            <li class="text-muted">Password must contain atleast 1 lowerCase alphabet.</li>
+            <li class="text-muted">Password must contain atleast 1 special characters(eg:#,@,$,%,&,*etc).</li>
+        </ul>
     </div>
-    <br>
     <!-- confirm password -->
     <div class="form-group">
         <label for="password2">
