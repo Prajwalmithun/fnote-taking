@@ -9,10 +9,11 @@ def create_app():
     # encrypt the session data and cookies
     app.config['SECRET_KEY'] = 'afsdhjksfadkjsfajhfajh'
 
-    # register the endpoints
+    # importing the blueprints(or endpoints)
     from .views import views
     from .auth import auth
 
+    # register the blueprints(or endpoints)
     app.register_blueprint(views,url_prefix='/')
     app.register_blueprint(auth,url_prefix='/')
 

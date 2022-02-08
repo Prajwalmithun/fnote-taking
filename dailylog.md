@@ -6,7 +6,7 @@
 
 ```
         website/__init__.py - for making "website" (dir) as "package"
-        website/auth.py     - 
+        website/auth.py     - for login,logout,signup routes
         website/models.py   - for storing DB models
         website/views.py    - for defining URL endpoints
 ```
@@ -22,3 +22,14 @@
     3. flask-login
 
     4. flask-sqlalchemy
+
+
+# Day 2
+
+- Created Nav Bar
+
+- Created Signup page
+
+- Created Login Page
+
+- User creation checks, flashing messages

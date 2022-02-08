@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %} Sign Up {% endblock %}
+
+{% block content %}
+<!-- Signup Form -->
+<form method="post">
+    <h3 align="center"> Sign Up </h3>
+
+    <!-- For email address -->
+    <div class="form-group">
+        <label for="email">
+            Email Address
+        </label>
+        <!-- "name=" is what we get the value from user and pass to backend-->
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+    </div>
+    <br>
+    <!-- For first name -->
+    <div class="form-group">
+        <label for="firstName">
+            First Name
+        </label>
+        <!-- "name=" is what we get the value from user and pass to backend-->
+        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+    </div>
+    <br>
+    <!-- for password -->
+    <div class="form-group">
+        <label for="password1">
+            Password
+        </label>
+        <!-- "name=" is what we get the value from user and pass to backend-->
+        <input type="password" class="form-control" id="password1" name="password1" placeholder="Password">
+    </div>
+    <br>
+    <!-- confirm password -->
+    <div class="form-group">
+        <label for="password2">
+            Confirm Password
+        </label>
+        <!-- "name=" is what we get the value from user and pass to backend-->
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm Password">
+    </div>
+<br>
+<!-- submit button-->
+<button type="submit" class="btn btn-primary"> Submit </button>
+
+</form>
+
+
+{% endblock %}
