@@ -43,6 +43,6 @@
 
 - In this project, there are 2 models(ie., 2 tables) (Note, User)
 
-*ISSUE* 
+*ISSUE* Need to fixed
 
 - Database file (sqlite file) is not getting created. [NEED TO FIX]
