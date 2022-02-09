@@ -9,10 +9,8 @@ from sqlalchemy.sql import func
 # class == table
 # attributes == column
 
-
 # For our Note Taking app
 # 2 models : 1> Notes 2> Users data
-
 
 # Notes model
 class Note(db.Model):

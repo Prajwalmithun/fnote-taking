@@ -26,7 +26,6 @@ def contains_lower(_password):
 def sw_ChrNum(_password):
     password = _password
     
-
 # password with special characters
 
 # password without special characters

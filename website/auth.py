@@ -19,7 +19,6 @@ def logout():
 
 
 
-
 @auth.route('/sign-up',methods=['GET','POST'])
 def sign_up():
     # we are diff GET and POST request

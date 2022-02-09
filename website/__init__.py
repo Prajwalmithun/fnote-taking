@@ -8,7 +8,6 @@ from os import path
 db = SQLAlchemy()
 DB_NAME = "database.db"
 
-
 # flask app initialization
 def create_app():
     app = Flask(__name__)
