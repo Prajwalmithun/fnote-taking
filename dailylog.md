@@ -33,3 +33,16 @@
 - Created Login Page
 
 - User creation checks, flashing messages
+
+
+# Day 3
+
+- SQLAlchemy: database configuration and initialization
+
+- Database models(schema) creation (check, models.py)
+
+- In this project, there are 2 models(ie., 2 tables) (Note, User)
+
+*ISSUE* 
+
+- Database file (sqlite file) is not getting created. [NEED TO FIX]
