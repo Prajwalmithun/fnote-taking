@@ -1,5 +1,15 @@
 # Simple Note Taking App using Flask
 
+Minimal Note Taking App 
+
+## Sample images
+
+![Signup Page](images/signup.png "Sign Up Page")
+
+![Login Page](images/login.png "Login Page")
+
+![Home Page](images/notes.png "Authentic user's home page containing notes")
+
 ## Functionalities
 
 - Create a new user (Signup)
