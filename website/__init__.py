@@ -3,10 +3,11 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy  # for database
 from os import path
+from flask_login import LoginManager
 
 # creating database object
 db = SQLAlchemy()
-DB_NAME = "database.db"
+DB_NAME = "db.sqlite3"
 
 # flask app initialization
 def create_app():
@@ -17,10 +18,13 @@ def create_app():
 
     # configuration database
     # we are using sqlite (basically a file that stores the data)
-    app.config['SQL_ALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
-    print(app.config['SQL_ALCHEMY_DATABASE_URI'])
+    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    #print(app.config['SQLALCHEMY_DATABASE_URI'])
+
     # database initialising for our app (ie., informing our app to use this database)
     db.init_app(app)
+
+    
 
     # importing the blueprints(or endpoints)
     from .views import views
@@ -32,6 +36,14 @@ def create_app():
 
     from .models import User, Note
     create_database(app)
+
+    login_manager = LoginManager()
+    login_manager.login_view = 'auth.login'
+    login_manager.init_app(app)
+
+    @login_manager.user_loader 
+    def login_user(id):
+        return User.query.get(int(id))
 
     return app
 

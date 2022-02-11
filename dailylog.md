@@ -43,6 +43,30 @@
 
 - In this project, there are 2 models(ie., 2 tables) (Note, User)
 
-*ISSUE* Need to fixed
+*ISSUE* [Fixed]
 
-- Database file (sqlite file) is not getting created. [NEED TO FIX]
+- Database file (sqlite file) is not getting created. [FIXED] 
+
+**Solution**
+
+typo with this line
+
+app.config['SQLALCHEMY_DATABASE_URI']
+
+
+# Day 4
+
+- Created DB
+
+- Adding users to the DB
+
+- Adding notes to the DB
+
+- Delete notes from DB [NOT WORKING - NEED TO FIX]
+
+
+# Future Plans
+
+- Send OTP to entered email for verification during signup
+
+- Sign in with Google/Apple/Facebook

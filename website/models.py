@@ -1,6 +1,5 @@
 # for storing Database models (like database schema)
 
-import email
 from enum import unique
 from . import db
 from flask_login import UserMixin
