@@ -2,6 +2,10 @@
 
 Minimal Note Taking App 
 
+## Use the project live
+
+(Note Taking App)[http://fnotes.vanquisher.in/login?next=%2F]
+
 ## Sample images
 
 ![Signup Page](images/signup.png "Sign Up Page")
